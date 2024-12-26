@@ -2,15 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Products | Maurish - Admin & Dashboard Template</title>
+    <title>Maurish | E-Comm Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/logo.png" />
 
-    <!-- ION Slider -->
+    <!-- jquery.vectormap css -->
     <link
-      href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css"
+      href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- DataTables -->
+    <link
+      href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Responsive datatable examples -->
+    <link
+      href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -28,6 +42,12 @@
     <link
       href="assets/css/app.min.css"
       id="app-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Sweet Alert-->
+    <link
+      href="assets/libs/sweetalert2/sweetalert2.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -309,53 +329,13 @@
                   <span>Ecommerce</span>
                 </a>
                 <ul class="sub-menu" aria-expanded="false">
-                  <li><a href="ecommerce-products.html">Products</a></li>
-                  <li>
-                    <a href="ecommerce-product-detail.html">Product Detail</a>
-                  </li>
-                  <li><a href="ecommerce-orders.html">Orders</a></li>
-                  <li><a href="ecommerce-customers.html">Customers</a></li>
-                  <li><a href="ecommerce-cart.html">Cart</a></li>
-                  <li><a href="ecommerce-checkout.html">Checkout</a></li>
-                  <li><a href="ecommerce-shops.html">Shops</a></li>
                   <li><a href="ecommerce-add-product.html">Add Product</a></li>
+                  <li><a href="ecommerce-products.html">Products List</a></li>
+                  <li><a href="ecommerce-orders.html">Orders List</a></li>
                 </ul>
               </li>
 
               <li class="menu-title">Pages</li>
-
-              <li>
-                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                  <i class="ri-account-circle-line"></i>
-                  <span>Authentication</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                  <li><a href="profile.html">Profile</a></li>
-                  <li><a href="settings.html">Settings</a></li>
-                  <li><a href="auth-login.html">Login</a></li>
-                  <li><a href="auth-register.html">Register</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                  <i class="ri-profile-line"></i>
-                  <span>Utility</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                  <li><a href="pages-starter.html">Starter Page</a></li>
-                  <li><a href="pages-maintenance.html">Maintenance</a></li>
-                  <li><a href="pages-comingsoon.html">Coming Soon</a></li>
-                  <li><a href="pages-timeline.html">Timeline</a></li>
-                  <li><a href="pages-faqs.html">FAQs</a></li>
-                  <li><a href="pages-pricing.html">Pricing</a></li>
-                  <li><a href="pages-404.html">Error 404</a></li>
-                  <li><a href="pages-500.html">Error 500</a></li>
-                </ul>
-              </li>
-
-              <li class="menu-title">Components</li>
-
               <li>
                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                   <i class="ri-bar-chart-line"></i>
@@ -374,20 +354,86 @@
                   </li>
                 </ul>
               </li>
-
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <i class="ri-profile-line"></i>
+                  <span>Web Utility</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="hero-banner.html">Hero Banner</a></li>
+                  <li>
+                    <a href="breadcrumb-banner.html">Breadcrumb Banner</a>
+                  </li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="terms-of-service.html">Terms Of Service</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="return-policy.html">Return Policy</a></li>
+                  <li><a href="our-team.html">Our Team</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="wedgets.html">Widgets</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <i class="ri-camera-line"></i>
+                  <span>New Collections</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="collections-categories.html">Categories</a></li>
+                  <li><a href="collections-list.html">Collections List</a></li>
+                </ul>
+              </li>
               <li>
                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                   <i class="ri-brush-line"></i>
                   <span>Blog</span>
                 </a>
                 <ul class="sub-menu" aria-expanded="false">
-                  <li><a href="blog-categories.html">Categories</a></li>
                   <li>
                     <a href="create-blog.html">Create Blog</a>
                   </li>
                   <li>
                     <a href="blog-list.html">Blog List</a>
                   </li>
+                </ul>
+              </li>
+              <li class="">
+                <a
+                  href="javascript: void(0);"
+                  class="has-arrow waves-effect"
+                  aria-expanded="false"
+                >
+                  <i class="ri-table-2"></i>
+                  <span>Brands</span>
+                </a>
+                <ul class="sub-menu mm-collapse" aria-expanded="false">
+                  <li><a href="create-brands.html">Create Brands</a></li>
+                  <li><a href="brands-list.html">Brands List</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <i class="ri-phone-camera-line"></i>
+                  <span>Contact Enquires</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="contact-inquires.html">Enquires List</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-title">Components</li>
+
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <i class="ri-account-circle-line"></i>
+                  <span>Authentication</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="settings.html">Settings</a></li>
+                  <li><a href="auth-login.html">Login</a></li>
+                  <li><a href="auth-register.html">Register</a></li>
                 </ul>
               </li>
             </ul>
@@ -409,14 +455,14 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Products</h4>
+                  <h4 class="mb-sm-0">Product List</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
-                        <a href="javascript: void(0);">Ecommerce</a>
+                        <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Products</li>
+                      <li class="breadcrumb-item active">Product List</li>
                     </ol>
                   </div>
                 </div>
@@ -425,785 +471,324 @@
             <!-- end page title -->
 
             <div class="row">
-              <div class="col-xl-3 col-lg-4">
-                <div class="card">
-                  <div class="card-header bg-transparent border-bottom">
-                    <h5 class="mb-0">Filters</h5>
-                  </div>
-
-                  <div class="card-body">
-                    <h5 class="font-size-14 mb-3">Categories</h5>
-
-                    <div class="accordion ecommerce" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            <i
-                              class="mdi mdi-desktop-classic font-size-16 align-middle me-2"
-                            ></i>
-                            Electronic
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            <ul class="list-unstyled categories-list mb-0">
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Mobile</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Mobile accessories</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Computers</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Laptops</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Speakers</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            <i
-                              class="mdi mdi-hanger font-size-16 align-middle me-2"
-                            ></i>
-                            Fashion
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse show"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            <ul class="list-unstyled categories-list mb-0">
-                              <li class="active">
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Clothing</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Footwear</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Watches</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Sportswear</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            <i
-                              class="mdi mdi-pinwheel-outline font-size-16 align-middle me-2"
-                            ></i>
-                            Baby & Kids
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            <ul class="list-unstyled categories-list mb-0">
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Clothing</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Footwear</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Toys</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Baby care</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item mb-3">
-                        <h2 class="accordion-header" id="headingFour">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour"
-                            aria-expanded="false"
-                            aria-controls="collapseFour"
-                          >
-                            <i
-                              class="mdi mdi-dumbbell font-size-16 align-middle me-2"
-                            ></i>
-                            Fitness
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseFour"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingFour"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            <ul class="list-unstyled categories-list mb-0">
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Gym equipment</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Yoga mat</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Dumbbells</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#"
-                                  ><i class="mdi mdi-circle-medium me-1"></i>
-                                  Protein supplements</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-body border-top">
-                    <div>
-                      <h5 class="font-size-14 mb-4">Price</h5>
-
-                      <input type="text" id="pricerange" />
-                    </div>
-                  </div>
-
-                  <div class="custom-accordion">
-                    <div class="card-body border-top">
-                      <div>
-                        <h5 class="font-size-14 mb-0">
-                          <a
-                            href="#collapseExample1"
-                            class="text-reset d-block"
-                            data-bs-toggle="collapse"
-                            >Discount
-                            <i
-                              class="mdi mdi-minus float-end accor-plus-icon"
-                            ></i
-                          ></a>
-                        </h5>
-
-                        <div class="collapse show" id="collapseExample1">
-                          <div class="mt-4">
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio6"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio6"
-                                >50% or more</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio5"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio5"
-                                >40% or more</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio4"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio4"
-                                >30% or more</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio3"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio3"
-                                >20% or more</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio2"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio2"
-                                >10% or more</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productdiscountRadio1"
-                                name="productdiscountRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productdiscountRadio1"
-                                >Less than 10%</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card-body border-top">
-                      <div>
-                        <h5 class="font-size-14 mb-0">
-                          <a
-                            href="#collapseExample2"
-                            class="text-reset d-block"
-                            data-bs-toggle="collapse"
-                            >Size
-                            <i
-                              class="mdi mdi-minus float-end accor-plus-icon"
-                            ></i
-                          ></a>
-                        </h5>
-
-                        <div class="collapse show" id="collapseExample2">
-                          <div class="mt-4">
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productsizeRadio1"
-                                name="productsizeRadio"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productsizeRadio1"
-                                >X-Large</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productsizeRadio2"
-                                name="productsizeRadio"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productsizeRadio2"
-                                >Large</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productsizeRadio3"
-                                name="productsizeRadio"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productsizeRadio3"
-                                >Medium</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productsizeRadio4"
-                                name="productsizeRadio"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productsizeRadio4"
-                                >Small</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body border-top">
-                      <div>
-                        <h5 class="font-size-14 mb-0">
-                          <a
-                            href="#collapseExample3"
-                            class="collapsed text-reset d-block"
-                            data-bs-toggle="collapse"
-                            >Customer Rating
-                            <i
-                              class="mdi mdi-minus float-end accor-plus-icon"
-                            ></i
-                          ></a>
-                        </h5>
-
-                        <div class="collapse" id="collapseExample3">
-                          <div class="mt-4">
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productratingRadio1"
-                                name="productratingRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productratingRadio1"
-                                >4 <i class="mdi mdi-star text-warning"></i> &
-                                Above</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productratingRadio2"
-                                name="productratingRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productratingRadio2"
-                                >3 <i class="mdi mdi-star text-warning"></i> &
-                                Above</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productratingRadio3"
-                                name="productratingRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productratingRadio3"
-                                >2 <i class="mdi mdi-star text-warning"></i> &
-                                Above</label
-                              >
-                            </div>
-                            <div class="form-check mt-2">
-                              <input
-                                type="radio"
-                                id="productratingRadio4"
-                                name="productratingRadio1"
-                                class="form-check-input"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="productratingRadio4"
-                                >1 <i class="mdi mdi-star text-warning"></i
-                              ></label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-9">
+              <div class="col-lg-12">
                 <div class="card">
                   <div class="card-body">
-                    <div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div>
-                            <h5>Clothes & Accessories</h5>
-                            <ol class="breadcrumb p-0 bg-transparent mb-2">
-                              <li class="breadcrumb-item">
-                                <a href="javascript: void(0);">Fashion</a>
-                              </li>
-                              <li class="breadcrumb-item">
-                                <a href="javascript: void(0);">Clothing</a>
-                              </li>
-                              <li class="breadcrumb-item active">T-shirts</li>
-                            </ol>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-inline float-md-end">
-                            <div class="search-box ms-2">
-                              <div class="position-relative">
-                                <input
-                                  type="text"
-                                  class="form-control rounded"
-                                  placeholder="Search..."
+                    <div class="row mb-4 text-lg-end">
+                      <div class="col-12">
+                        <a href="ecommerce-add-product.html">
+                          <button
+                            type="button"
+                            class="btn btn-dark waves-effect waves-light btn-sm"
+                          >
+                            Add More
+                            <i
+                              class="ri-arrow-right-line align-middle ms-2"
+                            ></i>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Product Image</th>
+                            <th>Product Name</th>
+                            <th>Product Tag</th>
+                            <th>Del Price</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>
+                              <div style="width: 40px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
                                 />
-                                <i class="mdi mdi-magnify search-icon"></i>
                               </div>
-                            </div>
-                          </div>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Acetate Shield</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate badge badge-soft-primary">
+                                SALE
+                              </p>
+                            </td>
+                            <td>
+                              <del class="text-truncate">Rs. 100.00</del>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Rs. 80.00</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate text-success">In Stock</p>
+                            </td>
+
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <a href="view-product-details.html">
+                                  <button class="btn btn-info btn-sm">
+                                    <i class="ri-eye-fill"></i>
+                                  </button>
+                                </a>
+                                <a href="edit-product-list.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>
+                              <div style="width: 40px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Acetate Shield</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate badge badge-soft-primary">
+                                SALE
+                              </p>
+                            </td>
+                            <td>
+                              <del class="text-truncate">Rs. 100.00</del>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Rs. 80.00</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate text-danger">
+                                out of Stock
+                              </p>
+                            </td>
+
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <a href="view-product-details.html">
+                                  <button class="btn btn-info btn-sm">
+                                    <i class="ri-eye-fill"></i>
+                                  </button>
+                                </a>
+                                <a href="edit-product-list.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>
+                              <div style="width: 40px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Acetate Shield</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate badge badge-soft-success">
+                                NEW
+                              </p>
+                            </td>
+                            <td>
+                              <del class="text-truncate">Rs. 100.00</del>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Rs. 80.00</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate text-danger">
+                                out of Stock
+                              </p>
+                            </td>
+
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <a href="view-product-details.html">
+                                  <button class="btn btn-info btn-sm">
+                                    <i class="ri-eye-fill"></i>
+                                  </button>
+                                </a>
+                                <a href="edit-product-list.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              <div style="width: 40px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Acetate Shield</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate badge badge-soft-success">
+                                NEW
+                              </p>
+                            </td>
+                            <td>
+                              <del class="text-truncate">Rs. 100.00</del>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Rs. 80.00</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate text-success">In Stock</p>
+                            </td>
+
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <a href="view-product-details.html">
+                                  <button class="btn btn-info btn-sm">
+                                    <i class="ri-eye-fill"></i>
+                                  </button>
+                                </a>
+                                <a href="edit-product-list.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-sm-6">
+                        <div>
+                          <p class="mb-sm-0 mt-2">
+                            Page <span class="fw-bold">2</span> Of
+                            <span class="fw-bold">113</span>
+                          </p>
                         </div>
                       </div>
-
-                      <ul class="list-inline my-3 ecommerce-sortby-list">
-                        <li class="list-inline-item">
-                          <span class="fw-medium font-family-secondary"
-                            >Sort by:</span
-                          >
-                        </li>
-                        <li class="list-inline-item active">
-                          <a href="#">Popularity</a>
-                        </li>
-                        <li class="list-inline-item"><a href="#">Newest</a></li>
-                        <li class="list-inline-item">
-                          <a href="#">Discount</a>
-                        </li>
-                      </ul>
-
-                      <div class="row g-0">
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-ribbon badge bg-warning">
-                                Trending
-                              </div>
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart-outline"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-1.png"
-                                alt="img-1"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Blue color, T-shirt
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Full sleeve T-shirt</a
-                                >
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">$240</h5>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-ribbon badge bg-primary">
-                                - 25 %
-                              </div>
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart-outline"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-2.png"
-                                alt="img-2"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Half sleeve, T-shirt
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Half sleeve T-shirt
-                                </a>
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">
-                                <span class="text-muted me-2"
-                                  ><del>$240</del></span
-                                >$225
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart text-danger"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-3.png"
-                                alt="img-3"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Green color, Hoodie
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Hoodie (Green)</a
-                                >
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">
-                                <span class="text-muted me-2"
-                                  ><del>$290</del></span
-                                >$275
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart-outline"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-4.png"
-                                alt="img-4"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Gray color, Hoodie
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Hoodie (Green)</a
-                                >
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">
-                                <span class="text-muted me-2"
-                                  ><del>$290</del></span
-                                >$275
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart text-danger"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-5.png"
-                                alt="img-5"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Blue color, T-shirt
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Full sleeve T-shirt</a
-                                >
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">$242</h5>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6">
-                          <div class="product-box">
-                            <div class="product-img">
-                              <div class="product-ribbon badge bg-primary">
-                                - 22 %
-                              </div>
-                              <div class="product-like">
-                                <a href="#">
-                                  <i class="mdi mdi-heart-outline"></i>
-                                </a>
-                              </div>
-                              <img
-                                src="assets/images/product/img-6.png"
-                                alt="img-6"
-                                class="img-fluid mx-auto d-block"
-                              />
-                            </div>
-
-                            <div class="text-center">
-                              <p class="font-size-12 mb-1">
-                                Black color, T-shirt
-                              </p>
-                              <h5 class="font-size-15">
-                                <a href="#" class="text-reset"
-                                  >Half sleeve T-shirt
-                                </a>
-                              </h5>
-
-                              <h5 class="mt-3 mb-0">
-                                <span class="text-muted me-2"
-                                  ><del>$240</del></span
-                                >$225
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row mt-4">
-                        <div class="col-sm-6">
-                          <div>
-                            <p class="mb-sm-0 mt-2">
-                              Page <span class="fw-bold">2</span> Of
-                              <span class="fw-bold">113</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="float-sm-end">
-                            <ul class="pagination pagination-rounded mb-sm-0">
-                              <li class="page-item disabled">
-                                <a href="#" class="page-link"
-                                  ><i class="mdi mdi-chevron-left"></i
-                                ></a>
-                              </li>
-                              <li class="page-item">
-                                <a href="#" class="page-link">1</a>
-                              </li>
-                              <li class="page-item active">
-                                <a href="#" class="page-link">2</a>
-                              </li>
-                              <li class="page-item">
-                                <a href="#" class="page-link">3</a>
-                              </li>
-                              <li class="page-item">
-                                <a href="#" class="page-link">4</a>
-                              </li>
-                              <li class="page-item">
-                                <a href="#" class="page-link">5</a>
-                              </li>
-                              <li class="page-item">
-                                <a href="#" class="page-link"
-                                  ><i class="mdi mdi-chevron-end"></i
-                                ></a>
-                              </li>
-                            </ul>
-                          </div>
+                      <div class="col-sm-6">
+                        <div class="float-sm-end">
+                          <ul class="pagination pagination-rounded mb-sm-0">
+                            <li class="page-item disabled">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-left"></i
+                              ></a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">5</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-end"></i
+                              ></a>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -1211,28 +796,195 @@
                 </div>
               </div>
             </div>
-            <!-- end row -->
           </div>
-          <!-- container-fluid -->
         </div>
-        <!-- End Page-content -->
+      </div>
 
-        <footer class="footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12 text-center">
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                © Maurish.
-              </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              © Maurish.
             </div>
           </div>
-        </footer>
-      </div>
-      <!-- end main content-->
+        </div>
+      </footer>
     </div>
-    <!-- END layout-wrapper -->
+
+    <!--add  modal start -->
+    <div
+      class="modal fade addModal"
+      tabindex="-1"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Collection List</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Image</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Status</label>
+
+                    <div class="square-switch">
+                      <input
+                        type="checkbox"
+                        id="square-switch3"
+                        switch="bool"
+                        checked=""
+                      />
+                      <label
+                        for="square-switch3"
+                        data-on-label="Ac..."
+                        data-off-label="InA..."
+                      ></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-light btn-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Cancel <i class="ri-close-circle-line"></i>
+            </button>
+            <button class="btn btn-success btn-sm">
+              Save <i class="ri-save-2-line"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <!--edit  modal start -->
+    <div
+      class="modal fade editModal"
+      tabindex="-1"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+      style="display: none"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Collection List</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Image</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Status</label>
+
+                    <div class="square-switch">
+                      <input
+                        type="checkbox"
+                        id="square-switch4"
+                        switch="bool"
+                        checked=""
+                      />
+                      <label
+                        for="square-switch4"
+                        data-on-label="Ac..."
+                        data-off-label="InA..."
+                      ></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-light btn-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Cancel <i class="ri-close-circle-line"></i>
+            </button>
+            <button class="btn btn-success btn-sm">
+              Update <i class="ri-save-2-line"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
@@ -1241,12 +993,30 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- Ion Range Slider-->
-    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!-- init js -->
-    <script src="assets/js/pages/product-filter-range.init.js"></script>
+    <!-- jquery.vectormap map -->
+    <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script>
 
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet alert init js-->
+    <script src="assets/js/pages/sweet-alerts.init.js"></script>
   </body>
 </html>

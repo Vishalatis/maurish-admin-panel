@@ -455,14 +455,14 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Hero Banner</h4>
+                  <h4 class="mb-sm-0">Blog List</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
                         <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Hero Banner</li>
+                      <li class="breadcrumb-item active">Blog List</li>
                     </ol>
                   </div>
                 </div>
@@ -476,15 +476,16 @@
                   <div class="card-body">
                     <div class="row mb-4 text-lg-end">
                       <div class="col-12">
-                        <button
-                          type="button"
-                          class="btn btn-dark waves-effect waves-light btn-sm"
-                          data-bs-toggle="modal"
-                          data-bs-target=".addModal"
-                        >
-                          Add More
-                          <i class="ri-arrow-right-line align-middle ms-2"></i>
-                        </button>
+                        <a href="create-blog.html">
+                          <button
+                            type="button"
+                            class="btn btn-dark waves-effect waves-light btn-sm"
+                          >
+                            Add More
+                            <i
+                              class="ri-arrow-right-line align-middle ms-2"
+                            ></i></button
+                        ></a>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -492,7 +493,9 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>Banner</th>
+                            <th>Post Image</th>
+                            <th>Title</th>
+                            <th>Short Description</th>
                             <th>Status</th>
                             <th>Action</th>
                           </tr>
@@ -501,7 +504,7 @@
                           <tr>
                             <th scope="row">1</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
+                              <div style="width: 40px; height: 40px">
                                 <img
                                   src="assets/images/small/img-3.jpg"
                                   alt="banner"
@@ -514,19 +517,28 @@
                               </div>
                             </td>
                             <td>
+                              <p class="text-truncate">
+                                Effortlessly Refined Styles For Celebrating
+                              </p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">
+                                Lorem ipsum dolor sit amet....
+                              </p>
+                            </td>
+
+                            <td>
                               <span class="badge badge-soft-success"
                                 >Active</span
                               >
                             </td>
                             <td>
                               <div>
-                                <button
-                                  class="btn btn-dark btn-sm"
-                                  data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
-                                >
-                                  <i class="ri-edit-box-line"></i>
-                                </button>
+                                <a href="edit-blog.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -540,7 +552,7 @@
                           <tr>
                             <th scope="row">2</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
+                              <div style="width: 40px; height: 40px">
                                 <img
                                   src="assets/images/small/img-3.jpg"
                                   alt="banner"
@@ -553,19 +565,28 @@
                               </div>
                             </td>
                             <td>
+                              <p class="text-truncate">
+                                Effortlessly Refined Styles For Celebrating
+                              </p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">
+                                Lorem ipsum dolor sit amet....
+                              </p>
+                            </td>
+
+                            <td>
                               <span class="badge badge-soft-danger"
-                                >InActive</span
+                                >In Active</span
                               >
                             </td>
                             <td>
                               <div>
-                                <button
-                                  class="btn btn-dark btn-sm"
-                                  data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
-                                >
-                                  <i class="ri-edit-box-line"></i>
-                                </button>
+                                <a href="edit-blog.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -579,7 +600,7 @@
                           <tr>
                             <th scope="row">3</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
+                              <div style="width: 40px; height: 40px">
                                 <img
                                   src="assets/images/small/img-3.jpg"
                                   alt="banner"
@@ -592,19 +613,76 @@
                               </div>
                             </td>
                             <td>
+                              <p class="text-truncate">
+                                Effortlessly Refined Styles For Celebrating
+                              </p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">
+                                Lorem ipsum dolor sit amet....
+                              </p>
+                            </td>
+
+                            <td>
                               <span class="badge badge-soft-success"
                                 >Active</span
                               >
                             </td>
                             <td>
                               <div>
+                                <a href="edit-blog.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
                                 <button
-                                  class="btn btn-dark btn-sm"
-                                  data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
                                 >
-                                  <i class="ri-edit-box-line"></i>
+                                  <i class="ri-delete-bin-line"></i>
                                 </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              <div style="width: 40px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <p class="text-truncate">
+                                Effortlessly Refined Styles For Celebrating
+                              </p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">
+                                Lorem ipsum dolor sit amet....
+                              </p>
+                            </td>
+
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <a href="edit-blog.html">
+                                  <button class="btn btn-dark btn-sm">
+                                    <i class="ri-edit-box-line"></i>
+                                  </button>
+                                </a>
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -616,6 +694,47 @@
                           </tr>
                         </tbody>
                       </table>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-sm-6">
+                        <div>
+                          <p class="mb-sm-0 mt-2">
+                            Page <span class="fw-bold">2</span> Of
+                            <span class="fw-bold">113</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="float-sm-end">
+                          <ul class="pagination pagination-rounded mb-sm-0">
+                            <li class="page-item disabled">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-left"></i
+                              ></a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">5</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-end"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -650,7 +769,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Add Banner</h5>
+            <h5 class="modal-title">Add Collection List</h5>
             <button
               type="button"
               class="btn-close"
@@ -661,23 +780,31 @@
           <div class="modal-body">
             <form>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
+                    <label class="form-label">Image</label>
                     <input type="file" class="form-control" />
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
                   <div class="mb-3">
                     <label class="form-label">Status</label>
 
@@ -728,7 +855,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Edit Banner</h5>
+            <h5 class="modal-title">Edit Collection List</h5>
             <button
               type="button"
               class="btn-close"
@@ -739,23 +866,31 @@
           <div class="modal-body">
             <form>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
+                    <label class="form-label">Image</label>
                     <input type="file" class="form-control" />
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
                   <div class="mb-3">
                     <label class="form-label">Status</label>
 
@@ -768,8 +903,8 @@
                       />
                       <label
                         for="square-switch4"
-                        data-on-label="Ac.."
-                        data-off-label="InA.."
+                        data-on-label="Ac..."
+                        data-off-label="InA..."
                       ></label>
                     </div>
                   </div>

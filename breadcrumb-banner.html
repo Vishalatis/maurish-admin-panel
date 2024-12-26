@@ -455,14 +455,14 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Hero Banner</h4>
+                  <h4 class="mb-sm-0">Breadcrumb Banner</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
                         <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Hero Banner</li>
+                      <li class="breadcrumb-item active">Breadcrumb Banner</li>
                     </ol>
                   </div>
                 </div>
@@ -492,7 +492,9 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>Banner</th>
+                            <th>Desktop Banner</th>
+                            <th>Mobile Banner</th>
+                            <th>Sub Category</th>
                             <th>Status</th>
                             <th>Action</th>
                           </tr>
@@ -512,6 +514,22 @@
                                   "
                                 />
                               </div>
+                            </td>
+                            <td>
+                              <div style="width: 80px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="">Jackets</span>
                             </td>
                             <td>
                               <span class="badge badge-soft-success"
@@ -553,6 +571,22 @@
                               </div>
                             </td>
                             <td>
+                              <div style="width: 80px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="">Hoodies</span>
+                            </td>
+                            <td>
                               <span class="badge badge-soft-danger"
                                 >InActive</span
                               >
@@ -590,6 +624,22 @@
                                   "
                                 />
                               </div>
+                            </td>
+                            <td>
+                              <div style="width: 80px; height: 40px">
+                                <img
+                                  src="assets/images/small/img-3.jpg"
+                                  alt="banner"
+                                  style="
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                  "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <span class="">Caps</span>
                             </td>
                             <td>
                               <span class="badge badge-soft-success"
@@ -650,7 +700,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Add Banner</h5>
+            <h5 class="modal-title">Add Breadcrumb Banner</h5>
             <button
               type="button"
               class="btn-close"
@@ -663,17 +713,25 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
+                    <label class="form-label">Select Sub Category</label>
                     <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
+                      <option value="">Caps</option>
+                      <option value="">Hoodies</option>
+                      <option value="">Jackets</option>
+                      <option value="">Belts</option>
+                      <option value="">Wallets</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
+                    <label class="form-label">Upload Desktop Banner</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label">Upload Mobile Banner</label>
                     <input type="file" class="form-control" />
                   </div>
                 </div>
@@ -728,7 +786,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Edit Banner</h5>
+            <h5 class="modal-title">Edit Breadcrumb Banner</h5>
             <button
               type="button"
               class="btn-close"
@@ -741,17 +799,25 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
+                    <label class="form-label">Select Sub Category</label>
                     <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
+                      <option value="">Caps</option>
+                      <option value="">Hoodies</option>
+                      <option value="">Jackets</option>
+                      <option value="">Belts</option>
+                      <option value="">Wallets</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
+                    <label class="form-label">Upload Desktop Banner</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label">Upload Mobile Banner</label>
                     <input type="file" class="form-control" />
                   </div>
                 </div>
@@ -768,8 +834,8 @@
                       />
                       <label
                         for="square-switch4"
-                        data-on-label="Ac.."
-                        data-off-label="InA.."
+                        data-on-label="Ac..."
+                        data-off-label="InA..."
                       ></label>
                     </div>
                   </div>

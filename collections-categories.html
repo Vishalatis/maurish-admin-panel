@@ -455,14 +455,16 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Hero Banner</h4>
+                  <h4 class="mb-sm-0">Collections Categories</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
                         <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Hero Banner</li>
+                      <li class="breadcrumb-item active">
+                        Collections Categories
+                      </li>
                     </ol>
                   </div>
                 </div>
@@ -492,7 +494,7 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>Banner</th>
+                            <th>Title</th>
                             <th>Status</th>
                             <th>Action</th>
                           </tr>
@@ -501,17 +503,7 @@
                           <tr>
                             <th scope="row">1</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
-                                <img
-                                  src="assets/images/small/img-3.jpg"
-                                  alt="banner"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                  "
-                                />
-                              </div>
+                              <p class="text-truncate">Men Collections</p>
                             </td>
                             <td>
                               <span class="badge badge-soft-success"
@@ -540,21 +532,11 @@
                           <tr>
                             <th scope="row">2</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
-                                <img
-                                  src="assets/images/small/img-3.jpg"
-                                  alt="banner"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                  "
-                                />
-                              </div>
+                              <p class="text-truncate">Women Collections</p>
                             </td>
                             <td>
-                              <span class="badge badge-soft-danger"
-                                >InActive</span
+                              <span class="badge badge-soft-success"
+                                >Active</span
                               >
                             </td>
                             <td>
@@ -579,17 +561,94 @@
                           <tr>
                             <th scope="row">3</th>
                             <td>
-                              <div style="width: 80px; height: 40px">
-                                <img
-                                  src="assets/images/small/img-3.jpg"
-                                  alt="banner"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 5px;
-                                  "
-                                />
+                              <p class="text-truncate">Bottoms Collections</p>
+                            </td>
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <button
+                                  class="btn btn-dark btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target=".editModal"
+                                >
+                                  <i class="ri-edit-box-line"></i>
+                                </button>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
                               </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              <p class="text-truncate">Belts Collections</p>
+                            </td>
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <button
+                                  class="btn btn-dark btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target=".editModal"
+                                >
+                                  <i class="ri-edit-box-line"></i>
+                                </button>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>
+                              <p class="text-truncate">T-shirt Collections</p>
+                            </td>
+                            <td>
+                              <span class="badge badge-soft-success"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div>
+                                <button
+                                  class="btn btn-dark btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target=".editModal"
+                                >
+                                  <i class="ri-edit-box-line"></i>
+                                </button>
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>
+                              <p class="text-truncate">Sunglass Collections</p>
                             </td>
                             <td>
                               <span class="badge badge-soft-success"
@@ -616,6 +675,47 @@
                           </tr>
                         </tbody>
                       </table>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-sm-6">
+                        <div>
+                          <p class="mb-sm-0 mt-2">
+                            Page <span class="fw-bold">2</span> Of
+                            <span class="fw-bold">113</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="float-sm-end">
+                          <ul class="pagination pagination-rounded mb-sm-0">
+                            <li class="page-item disabled">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-left"></i
+                              ></a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">5</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-end"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -650,7 +750,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Add Banner</h5>
+            <h5 class="modal-title">Add Collection Categories</h5>
             <button
               type="button"
               class="btn-close"
@@ -661,23 +761,14 @@
           <div class="modal-body">
             <form>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
-                    </select>
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
-                    <input type="file" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
+
+                <div class="col-lg-12">
                   <div class="mb-3">
                     <label class="form-label">Status</label>
 
@@ -728,7 +819,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Edit Banner</h5>
+            <h5 class="modal-title">Edit Collection Categories</h5>
             <button
               type="button"
               class="btn-close"
@@ -739,37 +830,28 @@
           <div class="modal-body">
             <form>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Male</option>
-                      <option value="">Female</option>
-                      <option value="">Kids</option>
-                    </select>
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" />
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label class="form-label">Upload Banner</label>
-                    <input type="file" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
+
+                <div class="col-lg-12">
                   <div class="mb-3">
                     <label class="form-label">Status</label>
 
                     <div class="square-switch">
                       <input
                         type="checkbox"
-                        id="square-switch4"
+                        id="square-switch3"
                         switch="bool"
                         checked=""
                       />
                       <label
-                        for="square-switch4"
-                        data-on-label="Ac.."
-                        data-off-label="InA.."
+                        for="square-switch3"
+                        data-on-label="Ac..."
+                        data-off-label="InA..."
                       ></label>
                     </div>
                   </div>
